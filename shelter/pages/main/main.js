@@ -322,4 +322,4 @@ const getPets = async () => {
     main(pets)
 }
 
-getPets()
+document.addEventListener('DOMContentLoaded', getPets);
