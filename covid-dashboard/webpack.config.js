@@ -10,7 +10,7 @@ module.exports = {
     entry: path.resolve(__dirname, 'src', 'index.js'),
     output: {
         filename: '[name].bundle.js',
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'build'),
         publicPath: process.env.ASSET_PATH || './',
     },
     module: {
@@ -48,7 +48,7 @@ module.exports = {
     ],
     devtool: isProduction ? false : 'source-map',
     devServer: {
-        contentBase: path.resolve(__dirname, 'dist'),
+        contentBase: path.resolve(__dirname, 'build'),
         compress: true,
         port: 9000,
         open: true,
